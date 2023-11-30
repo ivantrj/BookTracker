@@ -18,10 +18,10 @@ struct TextFieldWithIcon: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 20, height: 20)
-                .foregroundColor(.blue)
+                .foregroundStyle(.secondary)
             TextField(placeholder, text: $text)
                 .padding(.all, 10)
-                .background(Color(.systemGray6))
+                .background(Color(.secondarySystemBackground))
                 .cornerRadius(8)
         }
         .padding(.horizontal)

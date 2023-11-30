@@ -33,12 +33,13 @@ struct GenreButton: View {
                 .fontWeight(isSelected ? .bold : .regular)
                 .padding()
                 .frame(maxWidth: .infinity)
-                .background(isSelected ? Color.blue : Color.gray.opacity(0.2))
-                .foregroundColor(isSelected ? .white : .black)
+                .background(isSelected ? Color.blue : Color(.systemGray5))
+                .foregroundColor(isSelected ? .white : .primary)
                 .cornerRadius(8)
         }
     }
 }
+
 
 //
 //#Preview {
