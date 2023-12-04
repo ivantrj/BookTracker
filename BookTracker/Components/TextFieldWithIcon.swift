@@ -17,12 +17,12 @@ struct TextFieldWithIcon: View {
             Image(systemName: systemImageName)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 20, height: 20)
+                .frame(width: 35, height: 35)
                 .foregroundStyle(.secondary)
             TextField(placeholder, text: $text)
-                .padding(.all, 10)
+                .padding(.all, 20)
                 .background(Color(.secondarySystemBackground))
-                .cornerRadius(8)
+                .cornerRadius(16)
         }
         .padding(.horizontal)
     }

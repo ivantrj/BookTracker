@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C0A01C72B18E0E40074821E /* TextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A01C62B18E0E40074821E /* TextFieldWithIcon.swift */; };
-		2C0A01C92B18E2450074821E /* GenreSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A01C82B18E2450074821E /* GenreSelectionView.swift */; };
 		2C5552562B1E06B800A6E75F /* BookStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5552552B1E06B800A6E75F /* BookStatus.swift */; };
 		2CB710032B18D45700BBCEF1 /* BookTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB710022B18D45700BBCEF1 /* BookTrackerApp.swift */; };
 		2CB710052B18D45700BBCEF1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB710042B18D45700BBCEF1 /* MainView.swift */; };
@@ -25,7 +24,6 @@
 
 /* Begin PBXFileReference section */
 		2C0A01C62B18E0E40074821E /* TextFieldWithIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithIcon.swift; sourceTree = "<group>"; };
-		2C0A01C82B18E2450074821E /* GenreSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionView.swift; sourceTree = "<group>"; };
 		2C5552552B1E06B800A6E75F /* BookStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookStatus.swift; sourceTree = "<group>"; };
 		2CB70FFF2B18D45700BBCEF1 /* BookTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB710022B18D45700BBCEF1 /* BookTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTrackerApp.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 			children = (
 				2CB7101A2B18D59000BBCEF1 /* BookDetail.swift */,
 				2C0A01C62B18E0E40074821E /* TextFieldWithIcon.swift */,
-				2C0A01C82B18E2450074821E /* GenreSelectionView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -200,7 +197,6 @@
 				2CB7101D2B18D6DD00BBCEF1 /* BooksView.swift in Sources */,
 				2C0A01C72B18E0E40074821E /* TextFieldWithIcon.swift in Sources */,
 				2CB710052B18D45700BBCEF1 /* MainView.swift in Sources */,
-				2C0A01C92B18E2450074821E /* GenreSelectionView.swift in Sources */,
 				2CB710032B18D45700BBCEF1 /* BookTrackerApp.swift in Sources */,
 				2CB7101B2B18D59000BBCEF1 /* BookDetail.swift in Sources */,
 			);

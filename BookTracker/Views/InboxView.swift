@@ -33,7 +33,9 @@ struct InboxView: View {
             }
             .sheet(isPresented: $showingAddBookView) {
                 AddBookView()
+                    .presentationDetents([.medium])
             }
+            
         }
         .preferredColorScheme(isDarkMode ? .dark : .light)
     }
