@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C0A01C72B18E0E40074821E /* TextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A01C62B18E0E40074821E /* TextFieldWithIcon.swift */; };
 		2C0A01C92B18E2450074821E /* GenreSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0A01C82B18E2450074821E /* GenreSelectionView.swift */; };
+		2C5552562B1E06B800A6E75F /* BookStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5552552B1E06B800A6E75F /* BookStatus.swift */; };
 		2CB710032B18D45700BBCEF1 /* BookTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB710022B18D45700BBCEF1 /* BookTrackerApp.swift */; };
 		2CB710052B18D45700BBCEF1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB710042B18D45700BBCEF1 /* MainView.swift */; };
 		2CB710072B18D45B00BBCEF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB710062B18D45B00BBCEF1 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		2C0A01C62B18E0E40074821E /* TextFieldWithIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithIcon.swift; sourceTree = "<group>"; };
 		2C0A01C82B18E2450074821E /* GenreSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionView.swift; sourceTree = "<group>"; };
+		2C5552552B1E06B800A6E75F /* BookStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookStatus.swift; sourceTree = "<group>"; };
 		2CB70FFF2B18D45700BBCEF1 /* BookTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB710022B18D45700BBCEF1 /* BookTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTrackerApp.swift; sourceTree = "<group>"; };
 		2CB710042B18D45700BBCEF1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				2CB710132B18D4B300BBCEF1 /* BookTracker.xcdatamodeld */,
 				2CB710162B18D4F600BBCEF1 /* DataController.swift */,
+				2C5552552B1E06B800A6E75F /* BookStatus.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			files = (
 				2CB710152B18D4B300BBCEF1 /* BookTracker.xcdatamodeld in Sources */,
 				2CB710212B18D8B300BBCEF1 /* AddBookView.swift in Sources */,
+				2C5552562B1E06B800A6E75F /* BookStatus.swift in Sources */,
 				2CB7101F2B18D74300BBCEF1 /* SettingsView.swift in Sources */,
 				2CB710172B18D4F600BBCEF1 /* DataController.swift in Sources */,
 				2CB710192B18D51300BBCEF1 /* InboxView.swift in Sources */,

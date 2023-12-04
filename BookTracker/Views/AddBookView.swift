@@ -11,11 +11,13 @@ struct AddBookView: View {
     
     @Environment(\.managedObjectContext) var managedObjContext
     @Environment(\.dismiss) var dismiss
-
+    
     @State private var title = ""
     @State private var author = ""
     @State private var isBookAdded = false
     @State private var selectedGenre: String? = nil
+    @State private var selectedStatus: BookStatus = .wantToRead
+    
     let genres = ["Fantasy", "Self Improvement", "Science Fiction", "Code", "Romance"]
     
     var body: some View {
@@ -23,6 +25,14 @@ struct AddBookView: View {
             VStack(spacing: 20) {
                 TextFieldWithIcon(placeholder: "Book Title", text: $title, systemImageName: "book")
                 TextFieldWithIcon(placeholder: "Author", text: $author, systemImageName: "person")
+                
+                // Status Picker
+                Picker("Status", selection: $selectedStatus) {
+                    ForEach(BookStatus.allCases, id: \.self) { status in
+                        Text(status.rawValue).tag(status)
+                    }
+                }
+                .pickerStyle(.segmented)
                 
                 // Genre Selection
                 Text("Select Genre")
@@ -58,6 +68,7 @@ struct AddBookView: View {
         newBook.genre = selectedGenre
         newBook.date = Date()
         newBook.id = UUID()
+        newBook.status = selectedStatus.rawValue
         
         do {
             try managedObjContext.save()
