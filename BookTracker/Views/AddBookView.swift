@@ -72,6 +72,7 @@ struct AddBookView: View {
         newBook.date = Date()
         newBook.id = UUID()
         newBook.status = selectedStatus.rawValue
+        newBook.isInInbox = selectedStatus == .none
         
         do {
             try managedObjContext.save()

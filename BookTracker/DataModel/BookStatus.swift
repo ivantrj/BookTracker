@@ -8,7 +8,8 @@
 import Foundation
 
 enum BookStatus: String, Codable, CaseIterable {
-   case wantToRead = "Want to Read"
-   case reading = "Reading"
-   case read = "Read"
+    case none = "None"
+    case wantToRead = "Want to Read"
+    case reading = "Reading"
+    case read = "Read"
 }

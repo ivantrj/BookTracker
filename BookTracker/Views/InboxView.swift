@@ -10,7 +10,10 @@ import SwiftUI
 struct InboxView: View {
     @AppStorage("darkMode") var isDarkMode = false
     @Environment(\.managedObjectContext) var managedObjContext
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var books: FetchedResults<Book>
+    @FetchRequest(
+        sortDescriptors: [SortDescriptor(\.date, order: .reverse)],
+        predicate: NSPredicate(format: "isInInbox == true"))
+    var books: FetchedResults<Book>
     @State private var showingAddBookView = false
     
     var body: some View {

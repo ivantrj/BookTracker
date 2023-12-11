@@ -9,7 +9,11 @@ import SwiftUI
 
 struct BooksView: View {
     @Environment(\.managedObjectContext) var managedObjContext
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var books: FetchedResults<Book>
+    @FetchRequest(
+        sortDescriptors: [SortDescriptor(\.date, order: .reverse)],
+        predicate: NSPredicate(format: "isInInbox == false AND status != nil")
+    )
+    var books: FetchedResults<Book>
     
     @State private var selectedStatus: BookStatus = .wantToRead
     
